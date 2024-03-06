@@ -8,6 +8,9 @@ module.exports = {
     theme: "DEFAULT",
     currency: "USD",
   },
+  images: {
+    unoptimized: true
+  },
   webpack(config) {
     config.resolve.fallback = {
       "child_process": false, 
