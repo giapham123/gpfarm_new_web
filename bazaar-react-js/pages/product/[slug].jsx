@@ -89,7 +89,6 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const relatedProducts = await getRelatedProducts();
   const frequentlyBought = await getFrequentlyBought();
-  console.log(params.slug,"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
   const product = await api.getProduct(params.slug);
   return {
     props: {
