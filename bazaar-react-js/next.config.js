@@ -4,6 +4,7 @@ module.exports = {
   // i18n,
   devIndicators: {},
   basePath: '/gpfarm_new_web',
+  assetPrefix: '/gpfarm_new_web',
   publicRuntimeConfig: {
     // Available on both server and client
     theme: "DEFAULT",
