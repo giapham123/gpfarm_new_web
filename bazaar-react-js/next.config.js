@@ -2,9 +2,6 @@
 
 module.exports = {
   // i18n,
-  output: "export", 
-  basePath: "/bazaar-react-js", // <=== enables static exports
-  reactStrictMode: true,
   devIndicators: {},
   publicRuntimeConfig: {
     // Available on both server and client
@@ -16,8 +13,16 @@ module.exports = {
       "child_process": false, 
         "process":  false, 
         "fs": false, 
+        // "util": false, 
+        // "http": false,
+        // "https": false,
         "tls": false,
         "net": false,
+        // "crypto": false, 
+        // "path": false,
+        // "os": false, 
+        // "stream": false,
+        // "zlib": false,
         "dns":false
     };
     
