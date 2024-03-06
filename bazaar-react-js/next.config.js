@@ -2,7 +2,8 @@
 
 module.exports = {
   // i18n,
-  output: "export",  // <=== enables static exports
+  output: "export", 
+  basePath: "/gpfarm_new_web", // <=== enables static exports
   reactStrictMode: true,
   devIndicators: {},
   publicRuntimeConfig: {
