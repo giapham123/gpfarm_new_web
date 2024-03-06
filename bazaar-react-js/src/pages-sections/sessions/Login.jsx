@@ -9,7 +9,6 @@ import BazaarTextField from "components/BazaarTextField";
 import SocialButtons from "./SocialButtons";
 import EyeToggleButton from "./EyeToggleButton";
 import { FlexBox, FlexRowCenter } from "components/flex-box";
-import api from "utils/__api__/users";
 const fbStyle = {
   background: "#3B5998",
   color: "white",

@@ -5,9 +5,7 @@ import { H2 } from "components/Typography";
 import ShopLayout1 from "components/layouts/ShopLayout1";
 import ProductIntro from "pages-sections/product-details/ProductIntro";
 import ProductReview from "pages-sections/product-details/ProductReview";
-import AvailableShops from "pages-sections/product-details/AvailableShops";
 import RelatedProducts from "pages-sections/product-details/RelatedProducts";
-import FrequentlyBought from "pages-sections/product-details/FrequentlyBought";
 import ProductDescription from "pages-sections/product-details/ProductDescription";
 import {
   getFrequentlyBought,
@@ -33,7 +31,7 @@ const StyledTabs = styled(Tabs)(({ theme }) => ({
 // ===============================================================
 
 const ProductDetails = (props) => {
-  const { frequentlyBought, relatedProducts, product } = props;
+  const { relatedProducts, product } = props;
   const router = useRouter();
   const [selectedOption, setSelectedOption] = useState(0);
   const handleOptionClick = (_, value) => setSelectedOption(value);
@@ -91,6 +89,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const relatedProducts = await getRelatedProducts();
   const frequentlyBought = await getFrequentlyBought();
+  console.log(params.slug,"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa")
   const product = await api.getProduct(params.slug);
   return {
     props: {

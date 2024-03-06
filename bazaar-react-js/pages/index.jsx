@@ -2,18 +2,14 @@ import { Fragment, useCallback, useEffect, useState } from "react";
 import axios from "axios";
 import { Stack } from "@mui/material";
 import SEO from "components/SEO";
-import Setting from "components/Setting";
 import { Footer2 } from "components/footer";
-import Newsletter from "components/Newsletter";
 import ShopLayout2 from "components/layouts/ShopLayout2";
 import SidenavContainer from "components/SidenavContainer";
 import SideNavbar from "components/page-sidenav/SideNavbar";
 import Section1 from "pages-sections/grocery1/Section1";
 import Section2 from "pages-sections/grocery1/Section2";
 import AllProducts from "pages-sections/grocery1/AllProducts";
-import DiscountSection from "pages-sections/grocery1/DiscountSection";
 import ProductCarousel from "pages-sections/grocery1/ProductCarousel";
-import { MobileNavigationBar2 } from "components/mobile-navigation";
 import api from "utils/__api__/grocery1-shop";
 
 // =====================================================
@@ -97,7 +93,7 @@ const Grocery1 = (props) => {
       {/* <Newsletter image="/assets/images/newsletter/bg-2.png" /> */}
 
       {/* SETTINGS IS USED ONLY FOR DEMO, YOU CAN REMOVE THIS */}
-      <Setting />
+      {/* <Setting /> */}
 
       {/* MOBILE NAVIGATION WITH SIDE NAVABAR */}
       {/* <MobileNavigationBar2>

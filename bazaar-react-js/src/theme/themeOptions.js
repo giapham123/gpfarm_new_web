@@ -119,24 +119,6 @@ const themeOptions = (publicRuntimeConfig, pathname) => {
     case "/grocery3":
       updateTheme(THEMES.DEFAULT);
       break;
-    case "/gadget-shop":
-      updateTheme(THEMES.DEFAULT);
-      break;
-    case "/fashion-shop-1":
-      updateTheme(THEMES.DEFAULT);
-      break;
-    case "/market-1":
-      updateTheme(THEMES.DEFAULT);
-      break;
-    case "/furniture-shop":
-      updateTheme(THEMES.FURNITURE);
-      break;
-    case "/healthbeauty-shop":
-      updateTheme(THEMES.HEALTH);
-      break;
-    case "/gift-shop":
-      updateTheme(THEMES.GIFT);
-      break;
     default:
       themeOptions = themesOptions[publicRuntimeConfig.theme];
       break;
