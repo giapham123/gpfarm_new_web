@@ -3,13 +3,9 @@
 module.exports = {
   // i18n,
   devIndicators: {},
+  //config for build github page
   basePath: '/gpfarm_new_web',
   assetPrefix: '/gpfarm_new_web',
-  publicRuntimeConfig: {
-    // Available on both server and client
-    theme: "DEFAULT",
-    currency: "USD",
-  },
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
@@ -20,6 +16,12 @@ module.exports = {
   },
   images: {
     unoptimized: true
+  },
+  //end config
+  publicRuntimeConfig: {
+    // Available on both server and client
+    theme: "DEFAULT",
+    currency: "USD",
   },
   webpack(config) {
     config.resolve.fallback = {
