@@ -17,31 +17,31 @@ const navigations = [
   {
     icon: Dress,
     title: "Hạt Ngũ Cốc",
-    href: "/product/search/hat-ngu-coc",
+    href: "hat-ngu-coc",
     menuComponent: "MegaMenu1"
   },
   {
     icon: Dress,
     title: "Trái Cây Sấy",
-    href: "/product/search/trai-cay-say",
+    href: "trai-cay-say",
     menuComponent: "MegaMenu1"
   },
   {
     icon: Dress,
     title: "Banh Dinh Dưỡng",
-    href: "/product/search/banh-dinh-duong",
+    href: "banh-dinh-duong",
     menuComponent: "MegaMenu1"
   },
   {
     icon: Dress,
     title: "Granola",
-    href: "/product/search/granola",
+    href: "granola",
     menuComponent: "MegaMenu1"
   },
   {
     icon: Dress,
     title: "Nông Sản Theo Mùa",
-    href: "/product/search/nong-san-theo-mua",
+    href: "nong-san-theo-mua",
     menuComponent: "MegaMenu1"
   },
 ];
