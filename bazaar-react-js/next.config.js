@@ -17,9 +17,9 @@ module.exports = {
       '/': { page: '/' }
     }
   },
-  // images: {
-  //   unoptimized: true
-  // },
+  images: {
+    unoptimized: true
+  },
   //end config
   publicRuntimeConfig: {
     // Available on both server and client
