@@ -5,6 +5,9 @@ module.exports = {
   devIndicators: {},
   //config for build github page
   basePath: '/gpfarm_new_web',
+  publicRuntimeConfig: {
+    basePath: "/gpfarm_new_web",
+  },
   assetPrefix: '/gpfarm_new_web',
   exportPathMap: async function (
     defaultPathMap,
@@ -14,9 +17,9 @@ module.exports = {
       '/': { page: '/' }
     }
   },
-  images: {
-    unoptimized: true
-  },
+  // images: {
+  //   unoptimized: true
+  // },
   //end config
   publicRuntimeConfig: {
     // Available on both server and client
