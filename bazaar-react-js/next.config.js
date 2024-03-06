@@ -3,7 +3,7 @@
 module.exports = {
   // i18n,
   output: "export", 
-  basePath: "/gpfarm_new_web", // <=== enables static exports
+  basePath: "/bazaar-react-js", // <=== enables static exports
   reactStrictMode: true,
   devIndicators: {},
   publicRuntimeConfig: {
