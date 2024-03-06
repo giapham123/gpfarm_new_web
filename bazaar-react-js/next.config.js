@@ -8,7 +8,7 @@ module.exports = {
   publicRuntimeConfig: {
     basePath: "/gpfarm_new_web",
   },
-  assetPrefix: '/gpfarm_new_web',
+  assetPrefix: 'https://giapham123.github.io/gpfarm_new_web/',
   exportPathMap: async function (
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
