@@ -26,7 +26,7 @@ const MegaMenu1 = ({ data, minWidth }) => {
               {categories?.map((item, ind) => (
                 <Grid item md={3} key={ind}>
                   {item.href ? (
-                    <NavLink className="title-link" href={item.href}>
+                    <NavLink className="title-link" href={`/product/search/${item.href}`}>
                       {item.title}
                     </NavLink>
                   ) : (
@@ -45,7 +45,7 @@ const MegaMenu1 = ({ data, minWidth }) => {
 
           {rightImage && (
             <Box mt={1.5}>
-              <Link href={rightImage.href}>
+              <Link href={`/product/search/${rightImage.href}`}>
                 <LazyImage
                   src={rightImage.imgUrl}
                   width={137}
