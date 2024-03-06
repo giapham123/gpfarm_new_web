@@ -9,6 +9,15 @@ module.exports = {
     theme: "DEFAULT",
     currency: "USD",
   },
+  exportPathMap: async function (
+    defaultPathMap,
+    { dev, dir, outDir, distDir, buildId }
+  ) {
+    return {
+      '/': { page: '/' },
+      '/product/search/hat-ngu-coc': { page: '/product/search/hat-ngu-coc' },
+    }
+  },
   images: {
     unoptimized: true
   },
