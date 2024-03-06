@@ -14,8 +14,7 @@ module.exports = {
     { dev, dir, outDir, distDir, buildId }
   ) {
     return {
-      '/': { page: '/' },
-      '/product/search/hat-ngu-coc': { page: '/product/search/hat-ngu-coc' },
+      '/': { page: '/' }
     }
   },
   images: {
