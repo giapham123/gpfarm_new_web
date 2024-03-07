@@ -102,7 +102,7 @@ const Header = ({ isFixed, className, searchInput }) => {
             <Link href="/">
               <Image
                 height={44}
-                src="/assets/images/gpfarm/logo.jpg"
+                src="/gpfarm_new_web/assets/images/gpfarm/logo.jpg"
                 alt="logo"
               />
             </Link>
@@ -166,7 +166,7 @@ const Header = ({ isFixed, className, searchInput }) => {
         {/* LEFT CONTENT - LOGO AND CATEGORY */}
         <FlexBox mr={2} minWidth="170px" alignItems="center">
           <Link href="/">
-            <Image height={44} src="/assets/images/gpfarm/logo.jpg" alt="logo" />
+            <Image height={44} src="/gpfarm_new_web/assets/images/gpfarm/logo.jpg" alt="logo" />
           </Link>
 
           {/* SHOW DROP DOWN CATEGORY BUTTON WHEN HEADER FIXED */}

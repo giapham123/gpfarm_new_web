@@ -509,10 +509,10 @@ export const products = [
     thumbnail: "/assets/images/Groceries Shop/Offer Card.png",
     images: [
       
-      "/assets/images/gpfarm/banh-ngoi/1.jpg",
-      "/assets/images/gpfarm/banh-ngoi/2.jpg",
-      "/assets/images/gpfarm/banh-ngoi/3.jpg",
-      "/assets/images/gpfarm/banh-ngoi/4.jpg",
+      "/gpfarm_new_web/assets/images/gpfarm/banh-ngoi/1.jpg",
+      "/gpfarm_new_web/assets/images/gpfarm/banh-ngoi/2.jpg",
+      "/gpfarm_new_web/assets/images/gpfarm/banh-ngoi/3.jpg",
+      "/gpfarm_new_web/assets/images/gpfarm/banh-ngoi/4.jpg",
     ],
     categories: [],
     status: null,

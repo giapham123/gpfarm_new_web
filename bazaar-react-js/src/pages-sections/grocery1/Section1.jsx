@@ -3,7 +3,7 @@ import { H1 } from "components/Typography";
 import { SearchOutlinedIcon } from "components/search-box/styled";
 const leftImg = "/assets/images/headers/Header BG1.png";
 const rightImg = "/assets/images/headers/Header BG2.png";
-const backGroundImg = "/assets/images/gpfarm/back-ground.jpg";
+const backGroundImg = "/gpfarm_new_web/assets/images/gpfarm/back-ground.jpg";
 
 // styled component
 const Container = styled(Box)(({ theme }) => ({

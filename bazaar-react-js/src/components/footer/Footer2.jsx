@@ -39,7 +39,7 @@ const Footer2 = () => {
         }}
       >
         <Link href="/">
-          <BazaarImage height={44} mb={2.5} src="/assets/images/gpfarm/logo.jpg" alt="logo" />
+          <BazaarImage height={44} mb={2.5} src="/gpfarm_new_web/assets/images/gpfarm/logo.jpg" alt="logo" />
         </Link>
 
         <Grid container spacing={6}>
