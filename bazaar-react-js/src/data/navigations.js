@@ -17,7 +17,7 @@ const navigations = [
   {
     icon: Dress,
     title: "Hạt Ngũ Cốc",
-    href: "product/search/hat-ngu-cochat-ngu-coc",
+    href: "product/search/hat-ngu-coc",
     menuComponent: "MegaMenu1"
   },
   {
