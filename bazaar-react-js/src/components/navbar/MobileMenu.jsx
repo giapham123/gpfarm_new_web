@@ -79,13 +79,13 @@ const MobileMenu = () => {
       if (item.extLink) {
         return (
           <H6 key={index} py={1}>
-            <NavLink href={`/product/search/${item.url}`}>{item.title}</NavLink>
+            <NavLink href={item.url}>{item.title}</NavLink>
           </H6>
         );
       }
       return (
         <Box key={index} py={1}>
-          <NavLink href={`/product/search/${item.url}`}>{item.title}</NavLink>
+          <NavLink href={item.url}>{item.title}</NavLink>
         </Box>
       );
     });

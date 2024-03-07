@@ -162,7 +162,7 @@ const navbarNavigations = [
     child: [
       {
         title: "Hạt Ngũ Cốc",
-        url: "hat-ngu-coc"
+        url: "product/search/hat-ngu-coc"
       },
       {
         title: "Trái Cây Sấy",
