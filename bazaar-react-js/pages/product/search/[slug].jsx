@@ -79,16 +79,16 @@ const ProductSearchResult = (props) => {
     </ShopLayout1>
   );
 };
-// export const getStaticPaths = async () => {
-//   const paths = await api.getSlugs();
-//   return {
-//     paths: paths,
-//     //indicates that no page needs be created at build time
-//     fallback: "blocking", //indicates the type of fallback
-//   };
-// };
+export const getStaticPaths = async () => {
+  const paths = await api.getSlugs();
+  return {
+    paths: paths,
+    //indicates that no page needs be created at build time
+    fallback: "blocking", //indicates the type of fallback
+  };
+};
 export const getStaticProps = async ({ params }) => {
-  const product = await apiGrocery.getProductsGrocery("hat-ngu-coc");
+  const product = await apiGrocery.getProductsGrocery(params.slug);
   var titleName = "";
   if(params.slug == "hat-ngu-coc"){
     titleName= "Hạt Ngũ Cốc"
