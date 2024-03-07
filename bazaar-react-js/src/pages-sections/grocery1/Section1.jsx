@@ -79,7 +79,7 @@ const Section1 = () => {
       </H1>
 
       <Box className="searchBox">
-        {/* <TextField
+        <TextField
           placeholder="Searching for..."
           fullWidth
           InputProps={{
@@ -95,7 +95,7 @@ const Section1 = () => {
             endAdornment: SEARCH_BUTTON,
             startAdornment: <SearchOutlinedIcon fontSize="small" />,
           }}
-        /> */}
+        />
       </Box>
     </Container>
   );
