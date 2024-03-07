@@ -24,25 +24,14 @@ const uniqueProudcts = [...new Set(productList.map((item) => item.slug))].map(
   (item) => productList.find((it) => it.slug === item)
 );
 
-
-const abc = [{
-  params: {
-    slug: 'hat-ngu-coc'
-  }
-},
-{
-  params: {
-    slug: 'trai-cay-say'
-  }
-}]
 //end custom get path slug
 
 // get the all slugs
-const slugs = abc.concat(uniqueProudcts.map((item) => ({
+const slugs = uniqueProudcts.map((item) => ({
   params: {
     slug: item.slug,
   },
-})));
+}));
 
 // get product names for search
 const search = uniqueProudcts.slice(0, 6).map((item) => item.title);

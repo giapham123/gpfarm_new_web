@@ -81,8 +81,20 @@ export const serviceList = [
 export const products = [
   /////////////////////////////////
   {
-    id: "3c64b974-e784-4e46-9473-bc62c74391",
+    id: "3c64b974-e784-4e46-9473-bc62c274391",
+    slug: "banh-dinh-duong",
+  },
+  {
+    id: "3c64b974-e784-4e46-9473-1",
     slug: "hat-ngu-coc",
+  },
+  {
+    id: "3c64b974-e784-4e46-9473-bc2362c74391",
+    slug: "trai-cay-say",
+  },
+  {
+    id: "3c64b974-e784-4e46-9473-bc62c74391",
+    slug: "macca-27-27",
     title: "Macca DakLak Size 27-27mm",
     brand: null,
     price: 146,
