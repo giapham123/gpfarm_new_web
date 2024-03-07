@@ -109,11 +109,11 @@ export const products = [
     rating: 2,
     for: {
       demo: "grocery-1",
-      type: "all-products",
-      cate:"hat-ngu-coc",
-      popu:"popular-products",
-      trend:"trending-products",
-      allProduct:"all-products"
+      type: "",
+      cate:"",
+      popu:"",
+      trend:"",
+      allProduct:""
     },
   },
   {
@@ -144,11 +144,11 @@ export const products = [
     rating: 2,
     for: {
       demo: "grocery-1",
-      type: "all-products",
-      cate:"hat-ngu-coc",
-      popu:"popular-products",
-      trend:"trending-products",
-      allProduct:"all-products"
+      type: "",
+      cate:"",
+      popu:"",
+      trend:"",
+      allProduct:""
     },
   },
   {
@@ -179,11 +179,11 @@ export const products = [
     rating: 2,
     for: {
       demo: "grocery-1",
-      type: "all-products",
-      cate:"hat-ngu-coc",
-      popu:"popular-products",
-      trend:"trending-products",
-      allProduct:"all-products"
+      type: "",
+      cate:"",
+      popu:"",
+      trend:"",
+      allProduct:""
     },
   },
   {
