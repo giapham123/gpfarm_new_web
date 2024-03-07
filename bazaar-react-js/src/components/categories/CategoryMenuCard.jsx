@@ -37,7 +37,7 @@ const CategoryMenuCard = (props) => {
         return (
           <CategoryMenuItem
             key={item.title}
-            href={`/product/search/${item.href}`}
+            href={item.href}
             icon={item.icon}
             title={item.title}
             caret={!!item.menuData}
