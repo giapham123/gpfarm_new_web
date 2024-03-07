@@ -4,22 +4,22 @@ module.exports = {
   // i18n,
   devIndicators: {},
   //config for build github page
-  basePath: '/gpfarm_new_web',
-  publicRuntimeConfig: {
-    basePath: "/gpfarm_new_web",
-  },
-  assetPrefix: 'https://giapham123.github.io/gpfarm_new_web/',
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' }
-    }
-  },
-  images: {
-    unoptimized: true
-  },
+  // basePath: '/gpfarm_new_web',
+  // publicRuntimeConfig: {
+  //   basePath: "/gpfarm_new_web",
+  // },
+  // assetPrefix: 'https://giapham123.github.io/gpfarm_new_web/',
+  // exportPathMap: async function (
+  //   defaultPathMap,
+  //   { dev, dir, outDir, distDir, buildId }
+  // ) {
+  //   return {
+  //     '/': { page: '/' }
+  //   }
+  // },
+  // images: {
+  //   unoptimized: true
+  // },
   //end config
   publicRuntimeConfig: {
     // Available on both server and client
