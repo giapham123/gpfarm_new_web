@@ -19,7 +19,7 @@ const MegaMenu2 = ({ data }) => {
       >
         {data?.map((item) => (
           <CategoryMenuItem
-            href={`/product/search/${item.href}`}
+            href={item.href}
             icon={item.icon}
             key={item.title}
             title={item.title}
