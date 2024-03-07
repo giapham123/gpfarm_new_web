@@ -15,6 +15,15 @@ const getProduct = async (slug) => {
   return response.data;
 };
 
+const getProductSearch = async (slug) => {
+  const response = await axios.get("/api/products/search/slug", {
+    params: {
+      slug
+    },
+  });
+  return response.data;
+};
+
 // search profucts
 const searchProducts = async (name, category) => {
   const response = await axios.get("/api/products/search", {
@@ -29,4 +38,5 @@ export default {
   getSlugs,
   getProduct,
   searchProducts,
+  getProductSearch
 };

@@ -162,19 +162,19 @@ const navbarNavigations = [
     child: [
       {
         title: "Hạt Ngũ Cốc",
-        url: "/product/search/hat-ngu-coc"
+        url: "hat-ngu-coc"
       },
       {
         title: "Trái Cây Sấy",
-        url: "/product/search/trai-cay-say"
+        url: "trai-cay-say"
       },
       {
         title: "Bánh Dinh Dưỡng",
-        url: "/product/search/banh-dinh-duong",
+        url: "banh-dinh-duong",
       },
       {
         title: "Granola",
-        url: "/product/search/granola",
+        url: "granola",
       }
     ]
   },

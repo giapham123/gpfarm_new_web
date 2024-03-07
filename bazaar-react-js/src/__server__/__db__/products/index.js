@@ -39,6 +39,20 @@ Mock.onGet("/api/products/slug").reply(async (config) => {
     ];
   }
 });
+import { products as grocery1 } from "../grocery-1/data";
+Mock.onGet("/api/products/search/slug").reply(async (config) => {
+  try {
+    return [200, grocery1.filter((item) => item.for.cate === config.params.slug)];
+  } catch (err) {
+    console.error(err);
+    return [
+      500,
+      {
+        message: "Internal server error",
+      },
+    ];
+  }
+});
 
 //all products slug list
 Mock.onGet("/api/products/slug-list").reply(async () => {

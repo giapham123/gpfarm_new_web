@@ -88,7 +88,7 @@ export const getStaticPaths = async () => {
   };
 };
 export const getStaticProps = async ({ params }) => {
-  const product = await apiGrocery.getProductsGrocery(params.slug);
+  const product = await api.getProductSearch(params.slug);
   var titleName = "";
   if(params.slug == "hat-ngu-coc"){
     titleName= "Hạt Ngũ Cốc"
