@@ -151,7 +151,7 @@ const navbarNavigations = [
     title: "Nông Sản Theo Mùa",
     megaMenu: false,
     megaMenuWithSub: false,
-    url:"/nong-san-theo-mua"
+    url:"product/search/nong-san-theo-mua"
     
   },
   {
@@ -166,15 +166,15 @@ const navbarNavigations = [
       },
       {
         title: "Trái Cây Sấy",
-        url: "trai-cay-say"
+        url: "product/search/trai-cay-say"
       },
       {
         title: "Bánh Dinh Dưỡng",
-        url: "banh-dinh-duong",
+        url: "product/search/banh-dinh-duong",
       },
       {
         title: "Granola",
-        url: "granola",
+        url: "product/search/granola",
       }
     ]
   },
