@@ -151,7 +151,7 @@ const navbarNavigations = [
     title: "Nông Sản Theo Mùa",
     megaMenu: false,
     megaMenuWithSub: false,
-    url:"product/search/nong-san-theo-mua"
+    url:"/product/search/nong-san-theo-mua"
     
   },
   {
@@ -162,19 +162,19 @@ const navbarNavigations = [
     child: [
       {
         title: "Hạt Ngũ Cốc",
-        url: "product/search/hat-ngu-coc"
+        url: "/product/search/hat-ngu-coc"
       },
       {
         title: "Trái Cây Sấy",
-        url: "product/search/trai-cay-say"
+        url: "/product/search/trai-cay-say"
       },
       {
         title: "Bánh Dinh Dưỡng",
-        url: "product/search/banh-dinh-duong",
+        url: "/product/search/banh-dinh-duong",
       },
       {
         title: "Granola",
-        url: "product/search/granola",
+        url: "/product/search/granola",
       }
     ]
   },
