@@ -4,7 +4,7 @@ export const categoryNavigation = [
     category: "Top Categories",
     categoryItem: [
       {
-        icon: "Milk",
+        icon: "Granola",
         title: "Hạt Ngũ Cốc",
         code:"hat-ngu-coc",
         href: "/product/search/hat-ngu-coc",
@@ -16,7 +16,7 @@ export const categoryNavigation = [
         href: "/product/search/trai-cay-say",
       },
       {
-        icon: "Yogurt",
+        icon: "BanhDinhDuong",
         title: "Banh Dinh Dưỡng",
         code:"banh-dinh-duong",
         href: "/product/search/banh-dinh-duong",
@@ -28,13 +28,13 @@ export const categoryNavigation = [
         href: "/product/search/granola",
       },
       {
-        icon: "Yogurt",
+        icon: "Honey",
         title: "Mật Ong & Nghệ",
         code:"mat-ong-nghe",
         href: "/product/search/mat-ong-nghe",
       },
       {
-        icon: "Carrot",
+        icon: "Apple",
         title: "Nông Sản Theo Mùa",
         code:"nong-san-theo-mua",
         href: "/product/search/nong-san-theo-mua"

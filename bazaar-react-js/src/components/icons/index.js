@@ -132,7 +132,11 @@ import AutoMotive from "./health-and-beauty/Automotive";
 import OxygenPump from "./health-and-beauty/OxygenPump";
 import Thermometer from "./health-and-beauty/Thermometer";
 import HealthBeauty from "./health-and-beauty/HealthBeauty";
+import Granola from "./Granola";
+import BanhDinhDuong from "./BanhDinhDuong"
 const appIcons = {
+  BanhDinhDuong,
+  Granola,
   Beer,
   Milk,
   Snack,
