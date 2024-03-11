@@ -217,7 +217,7 @@ const ProductCard10 = (props) => {
                 className="addCartButton"
                 onClick={handleCartAmountChange(cartItem.qty - 1, "remove")}
               >
-                <Remove /> Remove from Cart
+                <Remove /> Xoá Khỏi Giỏ Hàng
               </Button>
             ) : (
               <Button
@@ -226,7 +226,7 @@ const ProductCard10 = (props) => {
                 className="addCartButton"
                 onClick={handleCartAmountChange(1)}
               >
-                <Add /> Add to Cart
+                <Add /> Thêm Vào Giỏ Hàng
               </Button>
             )}
           </Box>

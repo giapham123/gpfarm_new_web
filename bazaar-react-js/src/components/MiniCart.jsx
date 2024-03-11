@@ -206,7 +206,7 @@ const MiniCart = ({ toggleSidenav }) => {
             }}
             onClick={handleNavigate("/cart")}
           >
-            View Cart
+            Xem Giỏ Hàng
           </Button>
         </Box>
       )}

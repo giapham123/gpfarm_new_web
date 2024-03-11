@@ -112,7 +112,7 @@ const Cart = () => {
               variant="contained"
               LinkComponent={Link}
             >
-              Checkout Now
+              Thanh Toán Ngay
             </Button>
           </Card>
         </Grid>

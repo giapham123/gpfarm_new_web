@@ -163,7 +163,7 @@ const ProductIntro = ({ product }) => {
                 height: 40,
               }}
             >
-              Add to Cart
+              Thêm Vào Giỏ Hàng
             </Button>
           ) : (
             <FlexBox alignItems="center" mb={4.5}>

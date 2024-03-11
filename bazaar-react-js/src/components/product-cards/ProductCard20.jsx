@@ -76,7 +76,7 @@ const ProductCard20 = ({ product }) => {
       type: "CHANGE_CART_AMOUNT",
       payload,
     });
-    enqueueSnackbar("Added to Cart", {
+    enqueueSnackbar("Thêm Vào Giỏ Hàng", {
       variant: "success",
     });
   };
@@ -147,7 +147,7 @@ const ProductCard20 = ({ product }) => {
           variant="outlined"
           onClick={() => handleAddToCart(product)}
         >
-          Add To Cart
+          Thêm Vào Giỏ Hàng
         </Button>
       </Box>
     </Card>

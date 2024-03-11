@@ -82,7 +82,7 @@ const ProductCard18 = ({ product }) => {
       type: "CHANGE_CART_AMOUNT",
       payload,
     });
-    enqueueSnackbar("Added to Cart", {
+    enqueueSnackbar("Thêm Vào Giỏ Hàng", {
       variant: "success",
     });
   };
