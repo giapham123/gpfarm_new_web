@@ -73,12 +73,12 @@ const Section1 = () => {
   );
   return (
     <Container>
-      <H1 maxWidth={600} mx="auto">
+      <H1 maxWidth={700} mx="auto">
         {/* Get your grocery delivery within 30 minutes */}
         GPFarm Chuyên Nông Sản Sạch Tây Nguyên
       </H1>
 
-      <Box className="searchBox">
+      {/* <Box className="searchBox">
         <TextField
           placeholder="Searching for..."
           fullWidth
@@ -96,7 +96,7 @@ const Section1 = () => {
             startAdornment: <SearchOutlinedIcon fontSize="small" />,
           }}
         />
-      </Box>
+      </Box> */}
     </Container>
   );
 };

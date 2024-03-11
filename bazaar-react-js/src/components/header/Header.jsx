@@ -109,13 +109,13 @@ const Header = ({ isFixed, className, searchInput }) => {
 
             {/* RIGHT CONTENT - LOGIN, CART, SEARCH BUTTON */}
             <FlexBox justifyContent="end" flex={1}>
-              <Box component={IconButton} onClick={toggleSearchBar}>
+              {/* <Box component={IconButton} onClick={toggleSearchBar}>
                 <Icon.Search sx={ICON_STYLE} />
               </Box>
 
               <Box component={IconButton} onClick={toggleDialog}>
                 <Icon.User sx={ICON_STYLE} />
-              </Box>
+              </Box> */}
 
               <Box component={IconButton} onClick={toggleSidenav}>
                 <Badge badgeContent={state.cart.length} color="primary">
@@ -150,7 +150,7 @@ const Header = ({ isFixed, className, searchInput }) => {
               </FlexBetween>
 
               {/* CATEGORY BASED SEARCH FORM */}
-              {searchInput}
+              {/* {searchInput} */}
             </Box>
           </Drawer>
 
@@ -184,7 +184,8 @@ const Header = ({ isFixed, className, searchInput }) => {
 
         {/* SEARCH FORM */}
         <FlexBox justifyContent="center" flex="1 1 0">
-          {searchInput}
+          {/* {searchInput} */}
+          <h2>Uy Tín Tạo Nên Thương Hiệu GPFarm</h2>
         </FlexBox>
 
         {/* LOGIN AND CART BUTTON */}
