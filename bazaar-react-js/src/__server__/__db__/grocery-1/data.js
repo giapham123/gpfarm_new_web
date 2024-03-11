@@ -81,6 +81,30 @@ export const serviceList = [
 export const products = [
   /////////////////////////////////
   {
+    id: "3c64b974-e784-4e46-9473-bc6122c274391",
+    slug: "granola",
+    title: "Macca DakLak Size 27-27mm",
+    brand: null,
+    price: 146,
+    size: null,
+    colors: [],
+    discount: 7,
+    thumbnail: "",
+    images: [],
+    categories: [],
+    status: null,
+    reviews: [],
+    rating: 2,
+    for: {
+      demo: "grocery-1",
+      type: "",
+      cate:"",
+      popu:"",
+      trend:"",
+      allProduct:""
+    },
+  },
+  {
     id: "3c64b974-e784-4e46-9473-bc62c274391",
     slug: "nong-san-theo-mua",
     title: "Macca DakLak Size 27-27mm",
