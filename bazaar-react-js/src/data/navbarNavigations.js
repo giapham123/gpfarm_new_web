@@ -182,7 +182,7 @@ const navbarNavigations = [
     title: "Về Chúng Tôi",
     megaMenu: false,
     megaMenuWithSub: false,
-    url:"/"
+    url:"/aboutus"
     
   },
   // {

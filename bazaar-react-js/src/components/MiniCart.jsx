@@ -184,7 +184,7 @@ const MiniCart = ({ toggleSidenav }) => {
 
       {cartList.length > 0 && (
         <Box p={2.5}>
-          <Button
+          {/* <Button
             fullWidth
             color="primary"
             variant="contained"
@@ -195,7 +195,7 @@ const MiniCart = ({ toggleSidenav }) => {
             onClick={handleNavigate("/checkout-alternative")}
           >
             Checkout Now ({currency(getTotalPrice())})
-          </Button>
+          </Button> */}
 
           <Button
             fullWidth
