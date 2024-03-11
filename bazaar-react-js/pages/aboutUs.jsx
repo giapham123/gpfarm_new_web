@@ -7,6 +7,7 @@ const AboutUs = () => {
   return (
     <ShopLayout1>
     <Container maxWidth="md">
+    <Wrapper>
       <Box mt={5} mb={2}>
         <Typography variant="h4" align="center" gutterBottom>GP Farm</Typography>
         <Typography variant="h5" align="center" gutterBottom>Nông Sản Sạch Tây Nguyên</Typography>
@@ -44,6 +45,7 @@ const AboutUs = () => {
           </Box>
         </Grid>
       </Grid>
+      </Wrapper>
     </Container>
     </ShopLayout1>
   );
