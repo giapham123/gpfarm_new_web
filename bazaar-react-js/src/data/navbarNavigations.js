@@ -224,68 +224,68 @@ const navbarNavigations = [
   //     }
   //   ],
   // },
-  // {
-  //   megaMenu: false,
-  //   megaMenuWithSub: false,
-  //   title: "Pages",
-  //   child: [
-  //     {
-  //       title: "Sale Page",
-  //       child: [
-  //         {
-  //           title: "Version 1",
-  //           url: "/sale-page-1",
-  //         },
-  //         {
-  //           title: "Version 2",
-  //           url: "/sale-page-2",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "Vendor",
-  //       child: [
-  //         {
-  //           title: "All vendors",
-  //           url: "/shops",
-  //         },
-  //         {
-  //           title: "Vendor store",
-  //           url: "/shops/scarlett-beauty",
-  //         },
-  //       ],
-  //     },
-  //     {
-  //       title: "Shop",
-  //       child: [
-  //         {
-  //           title: "Search product",
-  //           url: "/product/search/mobile phone",
-  //         },
-  //         {
-  //           title: "Single product",
-  //           url: "/product/lord-2019",
-  //         },
-  //         {
-  //           title: "Cart",
-  //           url: "/cart",
-  //         },
-  //         {
-  //           title: "Checkout",
-  //           url: "/checkout",
-  //         },
-  //         {
-  //           title: "Alternative Checkout",
-  //           url: "/checkout-alternative",
-  //         },
-  //         {
-  //           title: "Order confirmation",
-  //           url: "/order-confirmation",
-  //         },
-  //       ],
-  //     },
-  //   ],
-  // },
+  {
+    megaMenu: false,
+    megaMenuWithSub: false,
+    title: "Pages",
+    child: [
+      {
+        title: "Sale Page",
+        child: [
+          {
+            title: "Version 1",
+            url: "/sale-page-1",
+          },
+          {
+            title: "Version 2",
+            url: "/sale-page-2",
+          },
+        ],
+      },
+      {
+        title: "Vendor",
+        child: [
+          {
+            title: "All vendors",
+            url: "/shops",
+          },
+          {
+            title: "Vendor store",
+            url: "/shops/scarlett-beauty",
+          },
+        ],
+      },
+      {
+        title: "Shop",
+        child: [
+          {
+            title: "Search product",
+            url: "/product/search/mobile phone",
+          },
+          {
+            title: "Single product",
+            url: "/product/lord-2019",
+          },
+          {
+            title: "Cart",
+            url: "/cart",
+          },
+          {
+            title: "Checkout",
+            url: "/checkout",
+          },
+          {
+            title: "Alternative Checkout",
+            url: "/checkout-alternative",
+          },
+          {
+            title: "Order confirmation",
+            url: "/order-confirmation",
+          },
+        ],
+      },
+    ],
+  },
   // {
   //   megaMenu: false,
   //   megaMenuWithSub: false,
