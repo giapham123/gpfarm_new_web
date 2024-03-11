@@ -74,7 +74,7 @@ const MiniCart = ({ toggleSidenav }) => {
               width={90}
               height={100}
               alt="banner"
-              src="/assets/images/logos/shopping-bag.svg"
+              src="/gpfarm_new_web/assets/images/logos/shopping-bag.svg"
             />
             <Box
               component="p"
