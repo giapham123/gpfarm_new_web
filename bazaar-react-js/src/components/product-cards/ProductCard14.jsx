@@ -280,7 +280,7 @@ const ProductCard14 = (props) => {
               }}
               onClick={handleCartAmountChange(1)}
             >
-              <Add /> Add to Cart
+              <Add /> Thêm Vào Giỏ Hàng
             </Button>
           )}
 

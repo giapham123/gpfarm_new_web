@@ -46,7 +46,7 @@ const Grocery1 = (props) => {
   );
   return (
     <ShopLayout2 showNavbar={false} showTopbar={false}>
-      <SEO title="Grocery store template v1" />
+      <SEO title="GPFarm Nông Sản Tây Nguyên" />
       {/* TOP HERO AREA */}
       <Section1 />
 
