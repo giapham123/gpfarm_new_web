@@ -130,8 +130,9 @@ export const serviceList = [
   {
     id: "a363c53d-9d1e-41c9-9ba3-4001a1832215",
     icon: "Truck",
-    title: "Fast Delivery",
-    description: "Start from $10",
+    // title: "Fast Delivery",
+    title: "Vận Chuyển nhanh",
+    description: "Chỉ từ 20.000 đ",
   },
   {
     id: "828a0143-5368-4c0f-bbbb-00e0ebd12b9b",

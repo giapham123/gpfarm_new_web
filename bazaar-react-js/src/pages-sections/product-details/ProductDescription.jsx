@@ -8,7 +8,7 @@ import { useEffect } from "react";
 
 const ProductDescription = ({ product }) => {
   const { id, price, title, desc, slug, thumbnail } = product;
-  useEffect (()=>{
+  useEffect(() => {
   })
   return (
     <Box>
@@ -16,10 +16,10 @@ const ProductDescription = ({ product }) => {
       <Box>
         Brand: GPFarm Chuyên Nông Sản Sạch Tây Nguyen <br />
         Model: S450 <br />
-        Wireless Bluetooth Headset <br />
-        FM Frequency Response: 87.5 – 108 MHz <br />
-        Feature: FM Radio, Card Supported (Micro SD / TF) <br />
-        Made in China <br />
+        <div style={{ whiteSpace: 'pre-line', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
+          {desc}
+        </div>
+        Sản Xuất Bởi GPFarm Daklak <br />
       </Box>
     </Box>
   );

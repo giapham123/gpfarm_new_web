@@ -51,7 +51,7 @@ const ProductDetails = (props) => {
         {product ? <ProductIntro product={product} /> : <H2>Loading...</H2>}
 
         {/* PRODUCT DESCRIPTION AND REVIEW */}
-        <StyledTabs
+        {/* <StyledTabs
           textColor="primary"
           value={selectedOption}
           indicatorColor="primary"
@@ -59,12 +59,12 @@ const ProductDetails = (props) => {
         >
           <Tab className="inner-tab" label="Description" />
           <Tab className="inner-tab" label="Review (3)" />
-        </StyledTabs>
+        </StyledTabs> */}
 
-        <Box mb={6}>
+        {/* <Box mb={6}>
           {selectedOption === 0 && <ProductDescription product={product}/>}
           {selectedOption === 1 && <ProductReview />}
-        </Box>
+        </Box> */}
 
         {/* {frequentlyBought && (
           <FrequentlyBought productsData={frequentlyBought} />

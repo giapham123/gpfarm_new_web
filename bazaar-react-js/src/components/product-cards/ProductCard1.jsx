@@ -118,13 +118,13 @@ const ProductCard1 = ({
             <RemoveRedEye color="disabled" fontSize="small" />
           </IconButton>
 
-          {/* <IconButton onClick={toggleIsFavorite}>
+          <IconButton onClick={toggleIsFavorite}>
             {isFavorite ? (
               <Favorite color="primary" fontSize="small" />
             ) : (
               <FavoriteBorder fontSize="small" color="disabled" />
             )}
-          </IconButton> */}
+          </IconButton>
         </HoverIconWrapper>
 
         <Link href={`/product/${slug}`}>

@@ -15,12 +15,12 @@ import productVariants from "data/product-variants";
 // ================================================================
 
 const ProductIntro = ({ product }) => {
-  const { id, price, title, images, slug, thumbnail } = product;
+  const { id, price, title, images, slug, thumbnail, desc } = product;
   const { state, dispatch } = useAppContext();
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectVariants, setSelectVariants] = useState({
-    option: "option 1",
-    type: "type 1",
+    option: "500gr",
+    // type: "type 1",
   });
 
   // HANDLE CHAMGE TYPE AND OPTIONS
@@ -108,7 +108,7 @@ const ProductIntro = ({ product }) => {
             <H6>GPFarm Chuyên Nông Sản Sạch Tây Nguyên</H6>
           </FlexBox>
 
-          <FlexBox alignItems="center" mb={2}>
+          {/* <FlexBox alignItems="center" mb={2}>
             <Box lineHeight="1">Rated:</Box>
             <Box mx={1} lineHeight="1">
               <BazaarRating
@@ -119,9 +119,9 @@ const ProductIntro = ({ product }) => {
               />
             </Box>
             <H6 lineHeight="1">(50)</H6>
-          </FlexBox>
+          </FlexBox> */}
 
-          {/* {productVariants.map((variant) => (
+          {productVariants.map((variant) => (
             <Box key={variant.id} mb={2}>
               <H6 mb={1}>{variant.title}</H6>
 
@@ -143,7 +143,7 @@ const ProductIntro = ({ product }) => {
                 />
               ))}
             </Box>
-          ))} */}
+          ))}
 
           <Box pt={1} mb={3}>
             <H2 color="primary.main" mb={0.5} lineHeight="1">
@@ -203,6 +203,14 @@ const ProductIntro = ({ product }) => {
               <H6>Mobile Store</H6>
             </Link>
           </FlexBox> */}
+          <Box>
+        <b><h2>Brand: GPFarm Chuyên Nông Sản Sạch Tây Nguyên</h2></b> <br />
+        {/* Model: S450 <br /> */}
+        <div style={{ whiteSpace: 'pre-line', wordBreak: 'break-word', overflowWrap: 'break-word' }}>
+          {desc}
+        </div>
+        Sản Xuất Bởi GPFarm Daklak <br />
+      </Box>
         </Grid>
       </Grid>
     </Box>
