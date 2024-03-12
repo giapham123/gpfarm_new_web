@@ -9,17 +9,22 @@ import PhoneInTalkOutlinedIcon from '@mui/icons-material/PhoneInTalkOutlined';
 import Facebook from "./icons/Facebook";
 import Tiktok from "./icons/Tiktok";
 import Zalo from "./icons/Zalo";
+import Messager from "./icons/Messager";
 
 const actions = [
-  { icon: <PhoneInTalkOutlinedIcon />, name: '0949.246.147' },
-  { icon: <Facebook />, name: 'https://www.facebook.com/gp.farm47' },
-  { icon: <Tiktok />, name: '@gpfarm47' },
-  { icon: <Zalo />, name: '0949.246.147' },
+  { key: 1, icon: <PhoneInTalkOutlinedIcon />, name: '0949.246.147' },
+  { key: 2, icon: <Facebook />, name: 'https://www.facebook.com/gp.farm47' },
+  { key: 5, icon: <Messager />, name: 'https://m.me/gp.farm47' },
+  { key: 3, icon: <Tiktok />, name: 'https://www.tiktok.com/@gpfarm47' },
+  { key: 4, icon: <Zalo />, name: '0949.246.147' },
 ];
 export default function Contact() {
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
+  const handleClickOpen = (param) => () => {
+    window.open(param, "_blank", "noreferrer");
+  };
 
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -34,11 +39,11 @@ export default function Contact() {
       >
         {actions.map((action) => (
           <SpeedDialAction
-            key={action.icon}
+            key={action.key}
             icon={action.icon}
             tooltipTitle={action.name}
             tooltipOpen
-            onClick={handleClose}
+            onClick={handleClickOpen(action.name)}
           />
         ))}
       </SpeedDial>

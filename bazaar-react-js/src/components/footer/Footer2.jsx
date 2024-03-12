@@ -45,9 +45,11 @@ const Footer2 = () => {
         <Grid container spacing={6}>
           <Grid item md={6} sm={6} xs={12}>
             <Paragraph mb={2.5} color="grey.500" maxWidth="370px">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Auctor
-              libero id et, in gravida. Sit diam duis mauris nulla cursus. Erat
-              et lectus vel ut sollicitudin elit at amet.
+            Chi Nhánh 1: Buôn Trấp, Krông Ana, Daklak<br />
+                  Chi Nhánh 2: 161 Đường số 4, Phường 16, Quận Gò Vấp<br />
+                  Phone & Zalo: 0949.246.147<br />
+                  Tiktok: @gpfarm47<br />
+                  Facebook: https://www.facebook.com/gp.farm47
             </Paragraph>
 
             {/* <AppStore /> */}
