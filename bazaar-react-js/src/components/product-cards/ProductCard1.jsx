@@ -118,13 +118,13 @@ const ProductCard1 = ({
             <RemoveRedEye color="disabled" fontSize="small" />
           </IconButton>
 
-          <IconButton onClick={toggleIsFavorite}>
+          {/* <IconButton onClick={toggleIsFavorite}>
             {isFavorite ? (
               <Favorite color="primary" fontSize="small" />
             ) : (
               <FavoriteBorder fontSize="small" color="disabled" />
             )}
-          </IconButton>
+          </IconButton> */}
         </HoverIconWrapper>
 
         <Link href={`/product/${slug}`}>
@@ -166,9 +166,9 @@ const ProductCard1 = ({
               </H3>
             </Link>
 
-            {!hideRating && (
+            {/* {!hideRating && (
               <BazaarRating value={rating || 0} color="warn" readOnly />
-            )}
+            )} */}
 
             {showProductSize && (
               <Span color="grey.600" mb={1} display="block">

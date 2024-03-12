@@ -28,7 +28,7 @@ const ProductCarousel = ({ products, title }) => {
   }, [width]);
   return (
     <CategorySectionCreator title={title} seeMoreLink="#" mb={0}>
-      <SubTitle>Best collection in 2021 for you!</SubTitle>
+      {/* <SubTitle>Best collection in 2021 for you!</SubTitle> */}
 
       <Carousel
         infinite={true}

@@ -58,21 +58,22 @@ function calculateDiscount(price, discount) {
  * @returns - RETURN PRICE WITH CURRENCY
  */
 
-function currency(price, fraction = 2) {
-  const formatCurrency = currencyJs(price).format({
-    precision: fraction,
-  });
-  return formatCurrency;
+// function currency(price, fraction = 2) {
+  function currency(price) {
+  // const formatCurrency = currencyJs(price).format({
+  //   precision: fraction,
+  // });
+  // return formatCurrency;
 
   // const { publicRuntimeConfig } = getConfig();
-  // const formatCurrency = new Intl.NumberFormat(undefined, {
-  //   style: "currency",
-  //   currency: publicRuntimeConfig.currency,
-  //   maximumFractionDigits: fraction,
-  //   minimumFractionDigits: fraction,
-  // });
+  const formatCurrency = new Intl.NumberFormat('vi-VN', {
+    style: "currency",
+    currency:"VND",
+    // maximumFractionDigits: fraction,
+    // minimumFractionDigits: fraction,
+  });
 
-  // return formatCurrency.format(price);
+  return formatCurrency.format(price);
 }
 
 export { renderProductCount, calculateDiscount, currency, getDateDifference };

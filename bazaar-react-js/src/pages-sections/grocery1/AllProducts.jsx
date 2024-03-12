@@ -17,7 +17,7 @@ const SubTitle = styled(Paragraph)(({ theme }) => ({
 const AllProducts = ({ products, title = "All Products" }) => {
   return (
     <CategorySectionCreator title={title} seeMoreLink="#">
-      <SubTitle>Best collection in 2021 for you!</SubTitle>
+      {/* <SubTitle>Best collection in 2021 for you!</SubTitle> */}
 
       <Grid container spacing={3}>
         {products.map((item) => (

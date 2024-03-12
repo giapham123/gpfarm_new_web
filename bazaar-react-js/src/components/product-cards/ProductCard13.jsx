@@ -157,7 +157,7 @@ const ProductCard13 = (props) => {
             <RemoveRedEye />
           </Span>
 
-          <Span
+          {/* <Span
             onClick={toggleIsFavorite}
             sx={{
               borderLeft: "1px solid",
@@ -170,7 +170,7 @@ const ProductCard13 = (props) => {
             ) : (
               <FavoriteBorder fontSize="small" color="disabled" />
             )}
-          </Span>
+          </Span> */}
 
           <Span onClick={handleCartAmountChange((cartItem?.qty || 0) + 1)}>
             <ShoppingCartIcon />
@@ -206,12 +206,12 @@ const ProductCard13 = (props) => {
             </H3>
           </Link>
 
-          {!hideRating && (
+          {/* {!hideRating && (
             <FlexBox gap={1} alignItems="center">
               <BazaarRating value={rating || 0} color="warn" readOnly />
               <Span color="grey.600">{`(${rating})`}</Span>
             </FlexBox>
-          )}
+          )} */}
 
           <FlexBox gap={1} alignItems="center" mt={0.5}>
             <Box fontWeight={600} color="primary.main">
