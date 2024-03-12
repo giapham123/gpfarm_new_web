@@ -81,7 +81,7 @@ const FrequentlyBought = ({ productsData }) => {
 
           <FlexBox gap={1.5}>
             <Button variant="contained" color="primary">
-              Add to Cart
+            Thêm Vào Giỏ Hàng
             </Button>
 
             <Button variant="outlined" color="primary">

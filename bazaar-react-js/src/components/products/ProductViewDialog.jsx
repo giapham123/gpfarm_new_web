@@ -149,7 +149,7 @@ const ProductViewDialog = (props) => {
                     height: 45,
                   }}
                 >
-                  Add to Cart
+                  Thêm Vào Giỏ Hàng
                 </Button>
               ) : (
                 <FlexBox alignItems="center">
