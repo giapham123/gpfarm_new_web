@@ -20,7 +20,7 @@ const navigations = [
   },
   {
     icon: BanhDinhDuong,
-    title: "Banh Dinh Dưỡng",
+    title: "Bánh Dinh Dưỡng",
     href: "/product/search/banh-dinh-duong",
     menuComponent: "MegaMenu1"
   },
@@ -33,7 +33,7 @@ const navigations = [
   {
     icon: Honey,
     title: "Mật Ong Và Nghệ",
-    href: "/product/search/granola",
+    href: "/product/search/mat-ong-nghe",
     menuComponent: "MegaMenu1"
   },
   {

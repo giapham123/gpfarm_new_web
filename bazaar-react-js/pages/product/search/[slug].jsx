@@ -101,6 +101,9 @@ export const getStaticProps = async ({ params }) => {
   }else if(params.slug == "granola"){
     titleName= "Granola"
   }
+  else if(params.slug == "mat-ong-nghe"){
+    titleName= "Mật Ong Và Nghệ"
+  }
   return {
     props: {
       product,

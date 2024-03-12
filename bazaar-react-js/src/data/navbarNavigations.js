@@ -175,6 +175,10 @@ const navbarNavigations = [
       {
         title: "Granola",
         url: "/product/search/granola",
+      },
+      {
+        title: "Mật Ong Và Nghệ",
+        url: "/product/search/mat-ong-nghe",
       }
     ]
   },
