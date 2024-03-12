@@ -11,6 +11,8 @@ import Section2 from "pages-sections/grocery1/Section2";
 import AllProducts from "pages-sections/grocery1/AllProducts";
 import ProductCarousel from "pages-sections/grocery1/ProductCarousel";
 import api from "utils/__api__/grocery1-shop";
+import Setting from "components/Setting";
+import Contact from "components/Contact";
 
 // =====================================================
 
@@ -93,6 +95,7 @@ const Grocery1 = (props) => {
       {/* <Newsletter image="/assets/images/newsletter/bg-2.png" /> */}
 
       {/* SETTINGS IS USED ONLY FOR DEMO, YOU CAN REMOVE THIS */}
+      <Contact />
       {/* <Setting /> */}
 
       {/* MOBILE NAVIGATION WITH SIDE NAVABAR */}
