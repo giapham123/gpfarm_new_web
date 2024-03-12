@@ -19,8 +19,8 @@ const ProductIntro = ({ product }) => {
   const { state, dispatch } = useAppContext();
   const [selectedImage, setSelectedImage] = useState(0);
   const [selectVariants, setSelectVariants] = useState({
-    option: "500gr",
-    // type: "type 1",
+    // option: "500gr",
+    type: "500gr",
   });
 
   // HANDLE CHAMGE TYPE AND OPTIONS
@@ -103,10 +103,10 @@ const ProductIntro = ({ product }) => {
         <Grid item md={6} xs={12} alignItems="center">
           <H1 mb={1}>{title}</H1>
 
-          <FlexBox alignItems="center" mb={1}>
+          {/* <FlexBox alignItems="center" mb={1}>
             <Box>Brand: </Box>
             <H6>GPFarm Chuyên Nông Sản Sạch Tây Nguyên</H6>
-          </FlexBox>
+          </FlexBox> */}
 
           {/* <FlexBox alignItems="center" mb={2}>
             <Box lineHeight="1">Rated:</Box>
@@ -123,8 +123,8 @@ const ProductIntro = ({ product }) => {
 
           {productVariants.map((variant) => (
             <Box key={variant.id} mb={2}>
-              <H6 mb={1}>{variant.title}</H6>
-
+              {/* <H6 mb={1}>{variant.title}</H6> */}
+              <H6 mb={1}>Trọng Lượng</H6> 
               {variant.values.map(({ id, value }) => (
                 <Chip
                   key={id}

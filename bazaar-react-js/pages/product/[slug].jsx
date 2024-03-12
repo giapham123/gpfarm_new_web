@@ -72,7 +72,7 @@ const ProductDetails = (props) => {
 
         {/* <AvailableShops /> */}
 
-        {relatedProducts && <RelatedProducts productsData={relatedProducts} />}
+        {/* {relatedProducts && <RelatedProducts productsData={relatedProducts} />} */}
       </Container>
     </ShopLayout1>
   );
