@@ -2,16 +2,8 @@ import { SvgIcon } from "@mui/material";
 import React from "react";
 const Messager = (props) => {
   return (
-    <SvgIcon {...props} viewBox="0 0 20 20">
-      <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Dribbble-Light-Preview" transform="translate(-340.000000, -7399.000000)" fill="#000000">
-            <g id="icons" transform="translate(56.000000, 160.000000)">
-                <path d="M294.957414,7251.413 L292.355524,7248.753 L287.343836,7251.48 L292.838297,7245.743 L295.440187,7248.403 L300.451875,7245.676 L294.957414,7251.413 Z M293.897347,7239 C288.340888,7239 284,7243.144 284,7248.257 C284,7251.165 284.852729,7253.76 287.901819,7255.457 L287.901819,7259 L291.171461,7257.126 C292.087204,7257.378 292.975506,7257.513 293.979673,7257.513 C299.536132,7257.513 304,7253.369 304,7248.257 C304,7243.144 299.454823,7239 293.897347,7239 L293.897347,7239 Z" id="messager-[#177]">
-
-</path>
-            </g>
-        </g>
-    </g>
+    <SvgIcon {...props} viewBox="0 0 25 25">
+      <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M18.47 16.83L18.86 19.99C18.96 20.82 18.07 21.4 17.36 20.97L13.17 18.48C12.71 18.48 12.26 18.45 11.82 18.39C12.56 17.52 13 16.42 13 15.23C13 12.39 10.54 10.09 7.49997 10.09C6.33997 10.09 5.26997 10.42 4.37997 11C4.34997 10.75 4.33997 10.5 4.33997 10.24C4.33997 5.68999 8.28997 2 13.17 2C18.05 2 22 5.68999 22 10.24C22 12.94 20.61 15.33 18.47 16.83Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> <path d="M13 15.23C13 16.42 12.56 17.5201 11.82 18.3901C10.83 19.5901 9.26 20.36 7.5 20.36L4.89 21.91C4.45 22.18 3.89 21.81 3.95 21.3L4.2 19.3301C2.86 18.4001 2 16.91 2 15.23C2 13.47 2.94 11.9201 4.38 11.0001C5.27 10.4201 6.34 10.0901 7.5 10.0901C10.54 10.0901 13 12.39 13 15.23Z" stroke="#292D32" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path> </g>
     </SvgIcon>
   );
 };
