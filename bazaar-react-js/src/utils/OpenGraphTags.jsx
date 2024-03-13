@@ -13,7 +13,7 @@ const OpenGraphTags = () => {
         property="og:description"
         content="React Next.js ecommerce template. Build SEO friendly Online store, delivery app and Multivendor store"
       />
-      <meta property="og:image" content="/assets/images/landing/preview.png" />
+      <meta property="og:image" content="/assets/images/gpfarm/logo.jpg" />
     </React.Fragment>
   );
 };
