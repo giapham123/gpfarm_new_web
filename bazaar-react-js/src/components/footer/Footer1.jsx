@@ -9,9 +9,9 @@ import Twitter from "components/icons/Twitter";
 import Youtube from "components/icons/Youtube";
 import Facebook from "components/icons/Facebook";
 import Instagram from "components/icons/Instagram";
-import Tiktok from "./icons/Tiktok";
-import Zalo from "./icons/Zalo";
-import Messager from "./icons/Messager";
+import Tiktok from "../icons/Tiktok";
+import Zalo from "../icons/Zalo";
+import Messager from "../icons/Messager";
 
 // styled component
 const StyledLink = styled(Link)(({ theme }) => ({
