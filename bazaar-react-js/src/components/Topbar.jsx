@@ -120,9 +120,8 @@ const Topbar = ({ bgColor }) => {
                 },
               }}
             />
-            <Span className="title">0949.246.147</Span>
+            <Span className="title">0949.246.147 | Copyright by GPFarm</Span>
           </FlexBox>
-
           <IconButton
             disableRipple
             className="expand"
@@ -131,9 +130,7 @@ const Topbar = ({ bgColor }) => {
             {expand ? <Remove /> : <Add />}
           </IconButton>
         </FlexBetween>
-
         <FlexBox className="topbarRight" alignItems="center">
-
           <FlexBox alignItems="center" gap={1.5}>
             {socialLinks.map(({ id, Icon, url }) => (
               <Link href={url} key={id}>
