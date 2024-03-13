@@ -72,6 +72,11 @@ const reducer = (state, action) => {
         ...state,
         cart: [...cartList, cartItem],
       };
+      case "INIT_CARTLIST":
+        return {
+          ...state,
+          cart: [],
+        };
     default: {
       return state;
     }

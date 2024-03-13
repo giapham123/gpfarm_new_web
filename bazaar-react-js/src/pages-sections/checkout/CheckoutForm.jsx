@@ -12,10 +12,11 @@ import api from "utils/__api__/checkouts";
 import { useAppContext } from "contexts/AppContext";
 const CheckoutForm = () => {
   const router = useRouter();
-  const { state } = useAppContext();
+  const { state, dispatch } = useAppContext();
   const cartList = state.cart;
   const [sameAsShipping, setSameAsShipping] = useState(false);
   const handleFormSubmit = async (values) => {
+    
     var productOrder = "";
     for(let i=0; i< cartList.length; i++){
       productOrder += "\n Tên Sản Phẩm: " + cartList[i].name + ", Giá: " + cartList[i].price + ", Số Lượng: " + cartList[i].qty 
@@ -29,6 +30,9 @@ const CheckoutForm = () => {
     };
     var result = await api.sendEmailFunc(paramEmail);
     if(result.status == 200){
+      dispatch({
+        type: "INIT_CARTLIST"
+      });
       router.push("/payment");
     }else{
       enqueueSnackbar("Cant Order Products", {
