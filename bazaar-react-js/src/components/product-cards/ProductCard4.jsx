@@ -42,7 +42,7 @@ const ProductCard4 = ({
       </H4>
 
       <H4 fontSize={14} textAlign="center" color="primary.main">
-        {currency(price)}
+        {currency(price)}/500gr
       </H4>
     </Box>
   );

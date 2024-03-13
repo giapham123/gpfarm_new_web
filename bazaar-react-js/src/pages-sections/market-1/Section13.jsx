@@ -61,7 +61,7 @@ const Section13 = ({ bigDiscountList }) => {
                       </H4>
 
                       <H4 fontWeight="600" fontSize="14px" color="grey.600">
-                        <del>{currency(price)}</del>
+                        <del>{currency(price)}/500gr</del>
                       </H4>
                     </FlexBox>
                   </Link>

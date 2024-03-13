@@ -53,7 +53,7 @@ const ProductRow = ({ product }) => {
         />
       </StyledTableCell>
 
-      <StyledTableCell align="left">{currency(price)}</StyledTableCell>
+      <StyledTableCell align="left">{currency(price)}/500gr</StyledTableCell>
 
       <StyledTableCell align="left">
         <BazaarSwitch

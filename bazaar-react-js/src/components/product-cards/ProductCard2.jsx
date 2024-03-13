@@ -30,7 +30,7 @@ const ProductCard2 = (props) => {
       </H4>
 
       <H4 fontSize={14} color="primary.main">
-        {currency(price)}
+        {currency(price)}/500gr
       </H4>
     </Link>
   );
