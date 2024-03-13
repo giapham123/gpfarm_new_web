@@ -9,6 +9,9 @@ import Twitter from "components/icons/Twitter";
 import Youtube from "components/icons/Youtube";
 import Facebook from "components/icons/Facebook";
 import Instagram from "components/icons/Instagram";
+import Tiktok from "../icons/Tiktok";
+import Zalo from "../icons/Zalo";
+import Messager from "../icons/Messager";
 
 // styled components
 const StyledFooter = styled("footer")(({ theme }) => ({
@@ -107,17 +110,13 @@ const iconList = [
     icon: Facebook,
     url: "https://www.facebook.com/UILibOfficial",
   },
-  // {
-  //   icon: Twitter,
-  //   url: "https://twitter.com/uilibofficial",
-  // },
-  // {
-  //   icon: Youtube,
-  //   url: "https://www.youtube.com/channel/UCsIyD-TSO1wQFz-n2Y4i3Rg",
-  // },
   {
-    icon: Google,
-    url: "https://www.google.com/search?q=ui-lib.com",
+    icon: Tiktok,
+    url: 'https://www.tiktok.com/@gpfarm47',
+  },
+  {
+    icon: Messager,
+    url: "https://m.me/gp.farm47",
   },
   // {
   //   icon: Instagram,
