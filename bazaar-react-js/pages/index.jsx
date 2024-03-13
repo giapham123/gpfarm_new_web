@@ -4,6 +4,7 @@ import { Stack } from "@mui/material";
 import SEO from "components/SEO";
 import { Footer2 } from "components/footer";
 import ShopLayout2 from "components/layouts/ShopLayout2";
+import ShopLayout1 from "components/layouts/ShopLayout1";
 import SidenavContainer from "components/SidenavContainer";
 import SideNavbar from "components/page-sidenav/SideNavbar";
 import Section1 from "pages-sections/grocery1/Section1";
@@ -47,7 +48,8 @@ const Grocery1 = (props) => {
     [props.grocery1NavList]
   );
   return (
-    <ShopLayout2 showNavbar={false} showTopbar={false}>
+    // <ShopLayout2 showNavbar={false} showTopbar={false}>
+    <ShopLayout1>
       <SEO title="GPFarm Nông Sản Tây Nguyên" />
       {/* TOP HERO AREA */}
       <Section1 />
@@ -102,7 +104,8 @@ const Grocery1 = (props) => {
       {/* <MobileNavigationBar2>
         <SideNavbar navList={props.grocery1NavList} />
       </MobileNavigationBar2> */}
-    </ShopLayout2>
+     {/* </ShopLayout2> */}
+    </ShopLayout1>
   );
 };
 export const getStaticProps = async () => {
