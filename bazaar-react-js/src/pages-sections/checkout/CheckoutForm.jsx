@@ -68,7 +68,7 @@ const CheckoutForm = () => {
             }}
           >
             <Typography fontWeight="600" mb={2}>
-              Shipping Address
+             Thông Tin Đặt Hàng
             </Typography>
 
             <Grid container spacing={6}>
@@ -223,7 +223,7 @@ const CheckoutForm = () => {
                 href="/cart"
                 fullWidth
               >
-                Back to Cart
+                Quay Lại Giỏ Hàng
               </Button>
             </Grid>
 
@@ -234,7 +234,7 @@ const CheckoutForm = () => {
                 type="submit"
                 fullWidth
               >
-                Place To Order
+                Đặt Hàng
               </Button>
             </Grid>
           </Grid>

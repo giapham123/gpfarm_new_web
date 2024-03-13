@@ -89,7 +89,7 @@ const Grocery1 = (props) => {
           {/* <DiscountSection /> */}
 
           {/* FOOTER AREA */}
-          <Footer2 />
+          {/* <Footer2 /> */}
         </Stack>
       </SidenavContainer>
 

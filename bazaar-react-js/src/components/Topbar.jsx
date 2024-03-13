@@ -16,6 +16,10 @@ import {
   MenuItem,
   styled,
 } from "@mui/material";
+// import Facebook from "./icons/Facebook";
+import Tiktok from "./icons/Tiktok";
+import Zalo from "./icons/Zalo";
+import Messager from "./icons/Messager";
 import TouchRipple from "@mui/material/ButtonBase";
 import { Span } from "components/Typography";
 import { FlexBetween, FlexBox } from "components/flex-box";
@@ -116,7 +120,7 @@ const Topbar = ({ bgColor }) => {
                 },
               }}
             />
-            <Span className="title">Free Express Shipping</Span>
+            <Span className="title">0949.246.147</Span>
           </FlexBox>
 
           <IconButton
@@ -129,26 +133,6 @@ const Topbar = ({ bgColor }) => {
         </FlexBetween>
 
         <FlexBox className="topbarRight" alignItems="center">
-          <BazaarMenu
-            handler={
-              <TouchRipple className="handler marginRight">
-                <Span className="menuTitle">
-                  {language === "en" ? "EN" : "DE"}
-                </Span>
-                <ExpandMore fontSize="inherit" />
-              </TouchRipple>
-            }
-          >
-            {languageList.map((item) => (
-              <MenuItem
-                key={item.title}
-                className="menuItem"
-                onClick={handleLanguageClick(item.value)}
-              >
-                <Span className="menuTitle">{item.title}</Span>
-              </MenuItem>
-            ))}
-          </BazaarMenu>
 
           <FlexBox alignItems="center" gap={1.5}>
             {socialLinks.map(({ id, Icon, url }) => (
@@ -169,18 +153,23 @@ const Topbar = ({ bgColor }) => {
 const socialLinks = [
   {
     id: 1,
-    Icon: Twitter,
-    url: "#",
+    Icon: Tiktok,
+    url: "https://www.tiktok.com/@gpfarm47",
   },
   {
     id: 2,
     Icon: Facebook,
-    url: "#",
+    url: "https://www.facebook.com/gp.farm47",
   },
   {
     id: 3,
-    Icon: Instagram,
+    Icon: Zalo,
     url: "#",
+  },
+  {
+    id: 4,
+    Icon: Messager,
+    url: "https://m.me/gp.farm47",
   },
 ];
 const languageList = [
