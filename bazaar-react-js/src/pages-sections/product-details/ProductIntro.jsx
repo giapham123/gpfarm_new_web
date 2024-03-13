@@ -147,7 +147,7 @@ const ProductIntro = ({ product }) => {
 
           <Box pt={1} mb={3}>
             <H2 color="primary.main" mb={0.5} lineHeight="1">
-              {currency(price)}/500gr
+              {currency(price)}
             </H2>
             {/* <Box color="inherit">Stock Available</Box> */}
           </Box>

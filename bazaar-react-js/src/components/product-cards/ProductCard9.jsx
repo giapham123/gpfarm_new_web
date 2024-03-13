@@ -98,7 +98,7 @@ const ProductCard9 = (props) => {
 
             <FlexBox mt={1} mb={2} alignItems="center">
               <H5 fontWeight={600} color="primary.main" mr={1}>
-                {currency(price)}/500gr
+                {currency(price)}
               </H5>
 
               {off && (

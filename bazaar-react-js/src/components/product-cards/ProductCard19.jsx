@@ -43,7 +43,7 @@ const ProductCard19 = ({ image, title, price, slug }) => {
         <NavLink href="#">
           <Paragraph fontSize={16}>{title}</Paragraph>
         </NavLink>
-        <Paragraph fontWeight={700}>{currency(price)}/500gr</Paragraph>
+        <Paragraph fontWeight={700}>{currency(price)}</Paragraph>
         <Rating
           value={4}
           sx={{

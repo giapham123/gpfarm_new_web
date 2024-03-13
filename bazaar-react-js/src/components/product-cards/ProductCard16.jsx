@@ -198,7 +198,7 @@ const ProductCard16 = (props) => {
 
           {discount !== 0 && (
             <Box color="grey.600" fontWeight="500">
-              <del>{currency(price)}/500gr</del>
+              <del>{currency(price)}</del>
             </Box>
           )}
         </FlexRowCenter>

@@ -52,7 +52,7 @@ const ProductCard3 = ({
 
             {!!off && (
               <Box color="grey.600" fontWeight="600">
-                <del>{currency(price)}/500gr</del>
+                <del>{currency(price)}</del>
               </Box>
             )}
           </FlexBox>

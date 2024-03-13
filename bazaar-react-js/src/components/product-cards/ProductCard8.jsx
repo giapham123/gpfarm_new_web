@@ -35,7 +35,7 @@ const ProductCard8 = (props) => {
 
         <FlexBox alignItems="center">
           <H6 color="primary.main" mr={0.5}>
-            {currency(price)}/500gr
+            {currency(price)}
           </H6>
 
           <Span color="grey.600">
