@@ -22,7 +22,7 @@ import api from "utils/__api__/products";
 import apiGrocery from "utils/__api__/grocery1-shop";
 import { useRouter } from "next/router";
 const ProductSearchResult = (props) => {
-  const {  product, title } = props;
+  const {  product, title, weight } = props;
   const router = useRouter();
   if (router.isFallback) {
     return <h1>Loading...</h1>;
@@ -51,8 +51,12 @@ const ProductSearchResult = (props) => {
           }}
         >
           <Box>
-            <H5>Searching for “ {title} ”</H5>
-            <Paragraph color="grey.600">{product.length} results found</Paragraph>
+            <H5>Tìm kiếm “ {title} ”</H5>
+            <Paragraph color="grey.600">{product.length} sản phẩm</Paragraph>
+          </Box>
+          <Box>
+            <H5>Trọng Lượng “ {weight} ”</H5>
+            {/* <Paragraph color="grey.600">{product.length} sản phẩm</Paragraph> */}
           </Box>
         </Card>
         <Grid container spacing={3}>
@@ -90,24 +94,32 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async ({ params }) => {
   const product = await api.getProductSearch(params.slug);
   var titleName = "";
+  var weight = "";
   if(params.slug == "hat-ngu-coc"){
     titleName= "Hạt Ngũ Cốc"
+    weight = "500gr"
   }else if(params.slug == "trai-cay-say"){
     titleName= "Trái Cây Sấy"
+    weight = "500gr"
   }else if(params.slug == "nong-san-theo-mua"){
     titleName= "Nông Sản Theo Mùa"
+    weight = "1Kg"
   }else if(params.slug == "banh-dinh-duong"){
     titleName= "Bánh Dinh Dưỡng"
+    weight = "250gr"
   }else if(params.slug == "granola"){
     titleName= "Granola"
+    weight = "500gr"
   }
   else if(params.slug == "mat-ong-nghe"){
     titleName= "Mật Ong Và Nghệ"
+    weight = "1 Lít và 500gr"
   }
   return {
     props: {
       product,
-      title: titleName
+      title: titleName,
+      weight: weight
     },
   };
 };
