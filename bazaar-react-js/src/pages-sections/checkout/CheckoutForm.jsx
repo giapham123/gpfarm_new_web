@@ -9,15 +9,23 @@ import Autocomplete from "@mui/material/Autocomplete";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import countryList from "data/countryList";
 import api from "utils/__api__/checkouts";
+import { useAppContext } from "contexts/AppContext";
 const CheckoutForm = () => {
   const router = useRouter();
+  const { state } = useAppContext();
+  const cartList = state.cart;
   const [sameAsShipping, setSameAsShipping] = useState(false);
   const handleFormSubmit = async (values) => {
+    var productOrder = "";
+    for(let i=0; i< cartList.length; i++){
+      productOrder += "\n Tên Sản Phẩm: " + cartList[i].name + ", Giá: " + cartList[i].price + ", Số Lượng: " + cartList[i].qty 
+    }
     const paramEmail = {
       phone:values.phoneNumber,
       customerName:values.fullName,
       address:values.address,
       note:values.note,
+      productOrder: productOrder
     };
     var result = await api.sendEmailFunc(paramEmail);
     if(result.status == 200){
