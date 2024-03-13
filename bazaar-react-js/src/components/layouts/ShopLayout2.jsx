@@ -1,41 +1,60 @@
 import { Fragment, useCallback, useState } from "react";
-import { Box } from "@mui/material";
 import Sticky from "components/Sticky";
 import Topbar from "components/Topbar";
+import { Footer1 } from "components/footer";
 import Header from "components/header/Header";
 import Navbar from "components/navbar/Navbar";
-import SearchInput from "components/search-box/SearchInput";
+import { MobileNavigationBar } from "components/mobile-navigation";
+import SearchInputWithCategory from "components/search-box/SearchInputWithCategory";
+import Contact from "components/Contact";
 
 /**
  *  Used in:
- *  1. grocery1, grocery2, healthbeauty-shop
- *  2. checkout-alternative
+ *  1. market-1, matket-2, gadget-shop,
+ *     fashion-shop, fashion-shop-2, fashion-shop-3, furniture-shop, grocery3, gift-shop
+ *  2. product details page
+ *  3. order-confirmation page
+ *  4. product-search page
+ *  5. shops and shops-details page
+ *  6. checkoutNavLayout and CustomerDashboadLayout component
  */
 
-// =======================================================
+// ===================================================
 
-// =======================================================
+// ===================================================
 
-const ShopLayout2 = ({ children, showTopbar = true, showNavbar = true }) => {
+const ShopLayout2 = ({
+  children,
+  topbarBgColor,
+  showTopbar = true,
+  showNavbar = true,
+}) => {
   const [isFixed, setIsFixed] = useState(false);
   const toggleIsFixed = useCallback((fixed) => setIsFixed(fixed), []);
   return (
     <Fragment>
       {/* TOPBAR */}
-      {showTopbar && <Topbar />}
+      {showTopbar && <Topbar bgColor={topbarBgColor} />}
 
       {/* HEADER */}
-      <Sticky fixedOn={0} onSticky={toggleIsFixed} scrollDistance={70}>
-        <Header isFixed={isFixed} searchInput={<SearchInput />} />
+      <Sticky fixedOn={0} onSticky={toggleIsFixed} scrollDistance={300}>
+        <Header isFixed={isFixed} searchInput={<SearchInputWithCategory />} />
       </Sticky>
 
-      <Box zIndex={4} position="relative" className="section-after-sticky">
+      <div className="section-after-sticky">
         {/* NAVIGATION BAR */}
-        {showNavbar && <Navbar elevation={0} />}
+        {showNavbar && <Navbar elevation={0} border={1} />}
 
         {/* BODY CONTENT */}
         {children}
-      </Box>
+      </div>
+
+      {/* SMALL DEVICE BOTTOM NAVIGATION */}
+      {/* <MobileNavigationBar /> */}
+
+      {/* FOOTER */}
+      <Contact/>
+      {/* <Footer1 /> */}
     </Fragment>
   );
 };

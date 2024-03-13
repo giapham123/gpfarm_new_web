@@ -49,7 +49,7 @@ const Grocery1 = (props) => {
   );
   return (
     // <ShopLayout2 showNavbar={false} showTopbar={false}>
-    <ShopLayout1>
+    <ShopLayout2>
       <SEO title="GPFarm Nông Sản Tây Nguyên" />
       {/* TOP HERO AREA */}
       <Section1 />
@@ -89,7 +89,7 @@ const Grocery1 = (props) => {
           {/* <DiscountSection /> */}
 
           {/* FOOTER AREA */}
-          {/* <Footer2 /> */}
+          <Footer2 />
         </Stack>
       </SidenavContainer>
 
@@ -105,7 +105,7 @@ const Grocery1 = (props) => {
         <SideNavbar navList={props.grocery1NavList} />
       </MobileNavigationBar2> */}
      {/* </ShopLayout2> */}
-    </ShopLayout1>
+    </ShopLayout2>
   );
 };
 export const getStaticProps = async () => {
