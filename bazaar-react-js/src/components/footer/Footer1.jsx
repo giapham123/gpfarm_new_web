@@ -45,7 +45,7 @@ const Footer1 = () => {
                 <Paragraph mb={2.5} color="grey.500">
                 Chi Nhánh 1: Buôn Trấp, Krông Ana, Daklak<br />
                   Chi Nhánh 2: 161 Đường số 4, Phường 16, Quận Gò Vấp<br />
-                  Phone & Zalo: 0949.246.147<br />
+                  {/* Phone & Zalo: 0949.246.147<br /> */}
                   Tiktok: @gpfarm47<br />
                   Facebook: https://www.facebook.com/gp.farm47
                 </Paragraph>
@@ -108,9 +108,9 @@ const Footer1 = () => {
                   Buôn Trấp, Krông Ana, Daklak
                 </Box>
 
-                <Box py={0.6} color="grey.500">
+                {/* <Box py={0.6} color="grey.500">
                   Email: uilib.help@gmail.com
-                </Box>
+                </Box> */}
 
                 <Box py={0.6} mb={2} color="grey.500">
                   Phone: 0949.246.147
