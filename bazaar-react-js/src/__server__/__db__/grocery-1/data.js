@@ -1379,4 +1379,80 @@ export const products = [
       allProduct:"all-products"
     },
   },
+  ///////////////GRANOLA//////////////////////////////////
+  {
+    id: "3c64b974-e7831r4-41e46-9473-1222",
+    slug: "granola-sieu-yenmach",
+    title: "Granola Siêu Hạt Không Yến Mạch",
+    brand: null,
+    price: 100000,
+    size: null,
+    colors: [],
+    discount: 0,
+    desc: ``,
+    thumbnail: "/assets/images/gpfarm/granola-sieu-yenmach/granola1.jpg",
+    images: [
+      "/assets/images/gpfarm/granola-sieu-yenmach/granola1.jpg"
+    ],
+    categories: [],
+    status: null,
+    reviews: [],
+    rating: 2,
+    for: {
+      demo: "grocery-1",
+      type: "all-products",
+      cate:"granola",
+      allProduct:"all-products"
+    },
+  },
+  {
+    id: "3c64b974-e7831r4-41e46-933473-12",
+    slug: "granola-5-yenmach",
+    title: "Granola Siêu Hạt 5% Yến Mạch",
+    brand: null,
+    price: 100000,
+    size: null,
+    colors: [],
+    discount: 0,
+    desc: ``,
+    thumbnail: "/assets/images/gpfarm/granola-5-yenmach/granola2.jpg",
+    images: [
+      "/assets/images/gpfarm/granola-5-yenmach/granola2.jpg"
+    ],
+    categories: [],
+    status: null,
+    reviews: [],
+    rating: 2,
+    for: {
+      demo: "grocery-1",
+      type: "all-products",
+      cate:"granola",
+      allProduct:"all-products"
+    },
+  },
+  {
+    id: "3c64b974-e74we831r4-41e46-9473-12",
+    slug: "granola-khong-yenmach",
+    title: "Granola Siêu Hạt Không Yến Mạch",
+    brand: null,
+    price: 100000,
+    size: null,
+    colors: [],
+    discount: 0,
+    desc: ``,
+    thumbnail: "/assets/images/gpfarm/granola-khong-yenmach/granola3.jpg",
+    images: [
+      "/assets/images/gpfarm/granola-khong-yenmach/granola3.jpg"
+    ],
+    categories: [],
+    status: null,
+    reviews: [],
+    rating: 2,
+    for: {
+      demo: "grocery-1",
+      type: "all-products",
+      cate:"granola",
+      allProduct:"all-products"
+    },
+  },
 ];
