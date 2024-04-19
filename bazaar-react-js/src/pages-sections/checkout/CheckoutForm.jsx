@@ -10,13 +10,15 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import countryList from "data/countryList";
 import api from "utils/__api__/checkouts";
 import { useAppContext } from "contexts/AppContext";
+import { useSnackbar } from "notistack";
+
 const CheckoutForm = () => {
+  const { enqueueSnackbar } = useSnackbar();
   const router = useRouter();
   const { state, dispatch } = useAppContext();
   const cartList = state.cart;
   const [sameAsShipping, setSameAsShipping] = useState(false);
   const handleFormSubmit = async (values) => {
-    
     var productOrder = "";
     for(let i=0; i< cartList.length; i++){
       productOrder += "\n Tên Sản Phẩm: " + cartList[i].name + ", Giá: " + cartList[i].price + ", Số Lượng: " + cartList[i].qty 
@@ -28,17 +30,25 @@ const CheckoutForm = () => {
       note:values.note,
       productOrder: productOrder
     };
-    var result = await api.sendEmailFunc(paramEmail);
-    if(result.status == 200){
-      dispatch({
-        type: "INIT_CARTLIST"
-      });
-      router.push("/payment");
-    }else{
+    try{
+      var result = await api.sendEmailFunc(paramEmail);
+      console.log(result,"cvcccc")
+      if(result.status == 200){
+        dispatch({
+          type: "INIT_CARTLIST"
+        });
+        router.push("/payment");
+      }else{
+        enqueueSnackbar("Cant Order Products", {
+          variant: "error",
+        }); 
+      }
+    }catch(e){
       enqueueSnackbar("Cant Order Products", {
         variant: "error",
-      }); 
+      });
     }
+    
   };
   const handleCheckboxChange = (values, setFieldValue) => (e, _) => {
     const checked = e.currentTarget.checked;

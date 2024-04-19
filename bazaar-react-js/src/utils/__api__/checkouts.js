@@ -21,6 +21,7 @@ export const sendEmailFunc = async (param) => {
   return response;
 } catch (error) {
     console.error('Error sending message:', error.response.data);
+    return null;
 }
 };
 export default {
