@@ -356,7 +356,7 @@ export const products = [
     slug: "macca-vo",
     title: "Nhân Macca Vỡ",
     brand: null,
-    price: 210000,
+    price: 220000,
     size: null,
     colors: [],
     discount: 0,
